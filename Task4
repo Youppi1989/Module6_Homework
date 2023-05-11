@@ -1,0 +1,11 @@
+function showNumbers(start, end) {
+let first = start;
+const intervalId = setInterval(function() {
+console.log(first);
+if (first === end) {
+      clearInterval(intervalId);
+    }
+    first++;
+  }, 1000);
+}
+showNumbers(4,18);
