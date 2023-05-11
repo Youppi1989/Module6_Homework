@@ -1,0 +1,11 @@
+function createFunction(func1) {
+  return function(func2) {
+    return func1 + func2;
+  };
+}
+const addFunction = createFunction(7);
+const result = addFunction(12);
+console.log(result);
+
+
+
